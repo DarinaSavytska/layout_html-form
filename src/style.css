@@ -1,8 +1,8 @@
 /* styles go here */
 
 .distance {
- line-height: 1.85; 
- margin-bottom: 20px;
+  line-height: 1.85;
+  margin-bottom: 20px;
 }
 
 legend {
@@ -13,4 +13,3 @@ legend {
 fieldset {
   margin-bottom: 20px;
 }
-
