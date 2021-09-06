@@ -1,17 +1,184 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
+  <!-- Первая часть -->
+
   <body>
-    <h1>HTML Form</h1>
+
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      class="distance"
+      onsubmit="onSubmit()"
+      method="POST">
+
+      <fieldset>
+        <legend>
+        Personal information
+        </legend>
+        <label for="Surname">
+          Surname:
+          <input
+          type="text"
+          name="Surname:"
+          autocomplete="off"
+          id="Surname">
+        </label> <br>
+        <label for="Name">
+          Name:
+          <input
+          type="text"
+          name="Name:"
+          autocomplete="off"
+          id="Name">
+        </label> <br>
+        <label for="Age">
+          How old are You?
+          <input type="number"
+          min="12"
+          max="100"
+          value="12"
+          id="Age">
+        </label> <br>
+        <label for="Birth">
+          Full date of birth:
+          <input
+          type="date"
+          id="Birth">
+        </label> <br>
+        <label for="Agreement">
+          I accept the term of the agreement
+          <input
+          type="checkbox"
+          id="Agreement">
+        </label>
+      </fieldset>
+
+      <!-- Вторая часть -->
+      <fieldset class="distance">
+        <legend>
+          Registration
+        </legend>
+        <label required for="E-mail">
+          E-mail:
+          <input type="email"
+          name="E-mail"
+          required
+          placeholder="email@example.com"
+          autocomplete="off"
+          id="E-mail"
+          >
+        </label> <br>
+
+        <label for="Password">
+          Password:
+          <input
+          type="password"
+          name="Password"
+          required
+          id="Password">
+        </label>
+      </fieldset>
+
+      <!-- Третья часть -->
+      <fieldset class="distance">
+        <legend>
+          An interesting fact about you!
+        </legend>
+
+        <label for="Cats">
+          Do you love cats?
+
+          <label for="Cats">
+            <input type="radio"
+            name="Cats"
+            value="Yes"
+            id="Cats">
+            Yes
+          </label>
+
+          <label for="cats">
+            <input type="radio"
+            name="Cats"
+            value="No"
+            id="cats">
+             No
+          </label>
+        </label> <br>
+
+        <label for="Color">
+          What is youre favorite color?
+          <input type="color"
+          name="color"
+          id="Color">
+          </select>
+        </label> <br>
+
+        <label for="Bed time">
+          What time do you go to bed?
+          <input type="time"
+          name="Time to bed"
+          id="Bed time">
+        </label>
+        <br>
+
+        <label>
+          What are you favorite brand of cars?
+          <select name="car" multiple>
+            <option value="BMW" id="Cars1 cars">BMW</option>
+            <option value="Audi" id="Cars2 cars">Audi</option>
+            <option value="Lada" id="Cars3 cars">Lada</option>
+          </select>
+        </label> <br>
+
+        <label for="Rate">
+          How do you rate our work?
+          <input
+          type="range"
+          name="range"
+          min="0"
+          max="10"
+          value="0"
+          id="Rate">
+        </label>
+      </fieldset>
+
+
+      <!-- Четвертая часть -->
+
+      <fieldset class="distance">
+        <legend>
+          Additional info:
+        </legend>
+
+        <label for="Comments">
+          Comments:
+          <textarea name="Comments" id="Comments"></textarea>
+        </label> <br>
+
+        <label for="Recommend">
+          Woud you recommend us?
+          <select name="recommend">
+            <option value="Yes" id="Recommend">Yes</option>
+            <option value="No" id="Recommend">No</option>
+          </select>
+        </label>
+      </fieldset>
+
+
+      <button type="submit">
+        Submit
+      </button>
+    </form>
+
+
     <script type="text/javascript" src="./main.js"></script>
   </body>
-</html>
+
+  </html>
