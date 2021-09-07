@@ -13,26 +13,27 @@
   </head>
 
   <body>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       onsubmit="onSubmit()"
       method="POST"
     >
-      <fieldset class="distanceFull">
+      <fieldset class="fieldset">
         <legend>
         Personal information
         </legend>
-        <div class="distanceText">
+        <div class="inputContainer">
           <label for="Surname">
             Surname:
             <input
-            type="text"
-            name="Surname:"
-            autocomplete="off"
-            id="Surname"
-          >
+              type="text"
+              name="Surname:"
+              autocomplete="off"
+              id="Surname"
+              >
           </label> <br>
         </div>
-        <div class="distanceText">
+        <div class="inputContainer">
           <label for="Name">
             Name:
             <input
@@ -43,7 +44,7 @@
           >
           </label> <br>
         </div>
-        <div class="distanceText">
+        <div class="inputContainer">
           <label for="Age">
             How old are You?
             <input type="number"
@@ -53,7 +54,7 @@
             id="Age">
           </label> <br>
         </div>
-        <div class="distanceText">
+        <div class="inputContainer">
           <label for="Birth">
             Full date of birth:
             <input
@@ -62,7 +63,7 @@
             >
           </label> <br>
         </div>
-        <div class="distanceText">
+        <div class="inputContainer">
           <label for="Agreement">
             I accept the term of the agreement
             <input
@@ -73,11 +74,11 @@
         </div>
       </fieldset>
 
-      <fieldset class="distanceFull">
+      <fieldset class="fieldset">
         <legend>
           Registration
         </legend>
-        <div class="distanceText">
+        <div class="inputContainer">
           <label required for="E-mail">
             E-mail:
             <input type="email"
@@ -89,7 +90,7 @@
             >
           </label> <br>
         </div>
-        <div class="distanceText">
+        <div class="inputContainer">
           <label for="Password">
             Password:
             <input
@@ -103,11 +104,11 @@
 
       </fieldset>
 
-      <fieldset class="distanceFull">
+      <fieldset class="fieldset">
         <legend>
           An interesting fact about you!
         </legend>
-        <div class="distanceText">
+        <div class="inputContainer">
           <label for="Cats">
             Do you love cats?
             <label for="Cats">
@@ -129,7 +130,7 @@
           </label> <br>
         </div>
 
-        <div class="distanceText">
+        <div class="inputContainer">
           <label for="Color">
             What is your favorite color?
             <input type="color"
@@ -140,7 +141,7 @@
           </label> <br>
         </div>
 
-        <div class="distanceText">
+        <div class="inputContainer">
           <label for="Bed time">
             What time do you go to bed?
             <input type="time"
@@ -149,7 +150,7 @@
             >
           </label> <br>
         </div>
-        <div class="distanceText">
+        <div class="inputContainer">
           What are your favorite brand of cars?
           <select name="car" multiple>
             <option value="BMW" id="car">BMW</option>
@@ -158,7 +159,7 @@
           </select>
         </div>
 
-        <div class="distanceText">
+        <div class="inputContainer">
           <label for="Rate">
             How do you rate our work?
             <input
@@ -173,19 +174,19 @@
         </div>
       </fieldset>
 
-      <fieldset class="distanceFull">
+      <fieldset class="fieldset">
         <legend>
           Additional info:
         </legend>
 
-        <div class="distanceText">
+        <div class="inputContainer">
           <label for="Comments">
             Comments:
             <textarea name="Comments" id="Comments"></textarea>
           </label> <br>
         </div>
 
-        <div class="distanceText">
+        <div class="inputContainer">
           Woud you recommend us?
           <select name="recommend">
             <option value="Yes" id="Recommend">Yes</option>

@@ -1,10 +1,10 @@
 /* styles go here */
 
-.distanceFull:not(:first-child) {
+.fieldset:not(:first-child) {
   margin-top: 20px;
 }
 
-.distanceText:not(:last-child) {
+.inputContainer:not(:last-child) {
   margin-bottom: 10px;
 }
 
