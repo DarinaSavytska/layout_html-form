@@ -1,168 +1,191 @@
 <!doctype html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
+      minimum-scale=1.0"
+    >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
-  <!-- Первая часть -->
 
   <body>
-
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      class="distance"
       onsubmit="onSubmit()"
-      method="POST">
-
-      <fieldset>
+      method="POST"
+    >
+      <fieldset class="distanceFull">
         <legend>
         Personal information
         </legend>
-        <label for="Surname">
-          Surname:
-          <input
-          type="text"
-          name="Surname:"
-          autocomplete="off"
-          id="Surname">
-        </label> <br>
-        <label for="Name">
-          Name:
-          <input
-          type="text"
-          name="Name:"
-          autocomplete="off"
-          id="Name">
-        </label> <br>
-        <label for="Age">
-          How old are You?
-          <input type="number"
-          min="12"
-          max="100"
-          value="12"
-          id="Age">
-        </label> <br>
-        <label for="Birth">
-          Full date of birth:
-          <input
-          type="date"
-          id="Birth">
-        </label> <br>
-        <label for="Agreement">
-          I accept the term of the agreement
-          <input
-          type="checkbox"
-          id="Agreement">
-        </label>
+        <div class="distanceText">
+          <label for="Surname">
+            Surname:
+            <input
+            type="text"
+            name="Surname:"
+            autocomplete="off"
+            id="Surname"
+          >
+          </label> <br>
+        </div>
+        <div class="distanceText">
+          <label for="Name">
+            Name:
+            <input
+            type="text"
+            name="Name:"
+            autocomplete="off"
+            id="Name"
+          >
+          </label> <br>
+        </div>
+        <div class="distanceText">
+          <label for="Age">
+            How old are You?
+            <input type="number"
+            min="12"
+            max="100"
+            value="12"
+            id="Age">
+          </label> <br>
+        </div>
+        <div class="distanceText">
+          <label for="Birth">
+            Full date of birth:
+            <input
+            type="date"
+            id="Birth"
+            >
+          </label> <br>
+        </div>
+        <div class="distanceText">
+          <label for="Agreement">
+            I accept the term of the agreement
+            <input
+            type="checkbox"
+            id="Agreement"
+            >
+          </label>
+        </div>
       </fieldset>
 
-      <!-- Вторая часть -->
-      <fieldset class="distance">
+      <fieldset class="distanceFull">
         <legend>
           Registration
         </legend>
-        <label required for="E-mail">
-          E-mail:
-          <input type="email"
-          name="E-mail"
-          required
-          placeholder="email@example.com"
-          autocomplete="off"
-          id="E-mail"
-          >
-        </label> <br>
+        <div class="distanceText">
+          <label required for="E-mail">
+            E-mail:
+            <input type="email"
+            name="E-mail"
+            required
+            placeholder="email@example.com"
+            autocomplete="off"
+            id="E-mail"
+            >
+          </label> <br>
+        </div>
+        <div class="distanceText">
+          <label for="Password">
+            Password:
+            <input
+            type="password"
+            name="Password"
+            required
+            id="Password"
+            >
+          </label>
+        </div>
 
-        <label for="Password">
-          Password:
-          <input
-          type="password"
-          name="Password"
-          required
-          id="Password">
-        </label>
       </fieldset>
 
-      <!-- Третья часть -->
-      <fieldset class="distance">
+      <fieldset class="distanceFull">
         <legend>
           An interesting fact about you!
         </legend>
-
-        <label for="Cats">
-          Do you love cats?
-
+        <div class="distanceText">
           <label for="Cats">
-            <input type="radio"
-            name="Cats"
-            value="Yes"
-            id="Cats">
-            Yes
-          </label>
+            Do you love cats?
+            <label for="Cats">
+              <input type="radio"
+              name="Cats"
+              value="Yes"
+              id="Cats"
+              >
+              Yes
+            </label>
+            <label for="cats">
+              <input type="radio"
+              name="Cats"
+              value="No"
+              id="cats"
+              >
+              No
+            </label>
+          </label> <br>
+        </div>
 
-          <label for="cats">
-            <input type="radio"
-            name="Cats"
-            value="No"
-            id="cats">
-             No
-          </label>
-        </label> <br>
+        <div class="distanceText">
+          <label for="Color">
+            What is your favorite color?
+            <input type="color"
+            name="color"
+            id="Color"
+            >
+            </select>
+          </label> <br>
+        </div>
 
-        <label for="Color">
-          What is youre favorite color?
-          <input type="color"
-          name="color"
-          id="Color">
-          </select>
-        </label> <br>
-
-        <label for="Bed time">
-          What time do you go to bed?
-          <input type="time"
-          name="Time to bed"
-          id="Bed time">
-        </label>
-        <br>
-
-        <div>
-          What are you favorite brand of cars?
+        <div class="distanceText">
+          <label for="Bed time">
+            What time do you go to bed?
+            <input type="time"
+            name="Time to bed"
+            id="Bed time"
+            >
+          </label> <br>
+        </div>
+        <div class="distanceText">
+          What are your favorite brand of cars?
           <select name="car" multiple>
             <option value="BMW" id="car">BMW</option>
             <option value="Audi" id="Cars2 cars">Audi</option>
             <option value="Lada" id="Cars3 cars">Lada</option>
           </select>
-        </div> <br>
+        </div>
 
-        <label for="Rate">
-          How do you rate our work?
-          <input
-          type="range"
-          name="range"
-          min="0"
-          max="10"
-          value="0"
-          id="Rate">
-        </label>
+        <div class="distanceText">
+          <label for="Rate">
+            How do you rate our work?
+            <input
+              type="range"
+              name="range"
+              min="0"
+              max="10"
+              value="0"
+              id="Rate"
+            >
+          </label>
+        </div>
       </fieldset>
 
-
-      <!-- Четвертая часть -->
-
-      <fieldset class="distance">
+      <fieldset class="distanceFull">
         <legend>
           Additional info:
         </legend>
 
-        <label for="Comments">
-          Comments:
-          <textarea name="Comments" id="Comments"></textarea>
-        </label> <br>
+        <div class="distanceText">
+          <label for="Comments">
+            Comments:
+            <textarea name="Comments" id="Comments"></textarea>
+          </label> <br>
+        </div>
 
-        <div>
+        <div class="distanceText">
           Woud you recommend us?
           <select name="recommend">
             <option value="Yes" id="Recommend">Yes</option>
@@ -171,14 +194,11 @@
         </div>
       </fieldset>
 
-
-      <button type="submit">
+      <button type="submit" class="button">
         Submit
       </button>
     </form>
 
-
     <script type="text/javascript" src="./main.js"></script>
   </body>
-
-  </html>
+</html>
